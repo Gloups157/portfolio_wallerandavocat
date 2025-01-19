@@ -1,4 +1,14 @@
-import Refcard from "@/app/refcard";
+import Refcard from "@/app/components/refcard";
+import RefcardData from "@/app/data/refcards.json";
+
+interface RefcardData {
+    title: string;
+    description: string;
+    url: string;
+    cover: string;
+    languages: string[];
+    tags: string[];
+}
 
 export default function Home() {
   return (
@@ -8,7 +18,10 @@ export default function Home() {
         </h1>
 
           <div>
-                <Refcard title="First " languages={["/images/languages/csharp.jpg"]} />
+              {RefcardData.map() => (
+                    <Refcard  />
+                )}
+              }
           </div>
       </main>
   );
