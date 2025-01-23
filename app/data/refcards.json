@@ -2,43 +2,49 @@
   {
     "title": "Robocup App",
     "description": "Projet de deux semaines en équipe de cinq réalisé dans le cadre de fin de troisième semestre de BUT Informatique en utilisant les méthodes agiles. Le concept était de réalisé une application permettant de participer et d'administrer des tournois de football pour robots.Je me suis occupé de la partie back-end avec la création des équipes et des compétitions mais j'ai pu aussi ajouté de multiples autres fonctionnalités demandés par le 'Product Owner' comme l'import et l'export de résultats de matchs au format Json. Nous avons eu recours à l'outil de 'versionning' Git pour travailler ensemble et avons déployé des pipelines pour s'assurer de l'application des normes PSR-12 notamment.",
-    "url": "google.com",
+    "url": "https://www.google.com/",
     "cover": "robotcup-main.png",
     "languages": ["javascript","css3","html5","php","symfony","sql","tailwind"]
   },
   {
     "title": "Flappy Bird Clone",
     "description": "Reproduction du célèbre jeu vidéo Flappy Bird en 2 heures.",
+    "url": "https://www.google.com/",
     "cover": "robotcup-main.png",
     "languages": ["csharp","unity"]
   },
   {
     "title": "Labyrinthe game",
     "description": "Réalisation d'un jeu vidéo de labyrinthe en 2D avec JavaFX. Le but du jeu est de monter tous les étages sans se faire attraper par les monstres pouvant le suivre.",
+    "url": "https://www.google.com/",
     "cover": "robotcup-main.png",
     "languages": ["java"]
   },
   {
     "title": "Design patterns learning",
     "description": "Projet réalisé sur plus d'un mois avec l'objectif d'apprendre l'ensemble des patrons de conceptions nécessaires dans la réalisation d'un futur jeu vidéo à la vente respectant les principes SOLID.",
+    "url": "https://www.google.com/",
     "cover": "robotcup-main.png",
     "languages": ["csharp","unity"]
   },
   {
     "title": "Carbon",
     "description": "Projet de deux semaines, réalisé en équipe de cinq dans le cadre de fin de deuxième semestre de BUT Informatique. L'objectif était de permettre à notre client de visionner les enjeux climatiques dans le monde ainsi que ces opportunités sur un planishpère permettant l'affichage de données tel que le niveau de vie dans la zone séléctionné ou encore le pourcentage d'utilisation de chaque énergie dans cette zone. Je me suis occupé majoritairement du front-end avec la conception des maquettes et l'intégration de celles-ci avec Windows Forms et .Net.",
+    "url": "https://www.google.com/",
     "cover": "robotcup-main.png",
     "languages": ["csharp","python","sql","dotnet"]
   },
   {
     "title": "Procedural terrain generation",
     "description": "Expérimentation de la génération procédurale avec l'algorithme de Perlin sur Unity en suivant les tutoriels de la chaîne Youtube TUTO UNITY FR.",
+    "url": "https://www.google.com/",
     "cover": "robotcup-main.png",
     "languages": ["csharp","unity"]
   },
   {
     "title": "Towa",
     "description": "Réalisation d'un jeu de plateau aux règles complexes. le projet s'est déroulé sur un mois et en deux phases : la première consistait en la programmation des règles permettant de jouer au jeu. La seconde correspondait en la création d'intelligences artificelles permettant d'affronter un joueur ou une autre IA. J'ai alors opté pour l'algorithme min-max qui permettant de jouer le coup faisant perdre le moins de points à l'IA et le plus à l'adversaire.",
+    "url": "https://www.google.com/",
     "cover": "robotcup-main.png",
     "languages": ["java"]
   }

@@ -1,6 +1,6 @@
 'use client';
 import Refcard from "@/app/components/refcard";
-import RefcardData from "@/app/data/refcards.json";
+import RefcardJson from "@/app/data/refcards.json";
 import {useState} from "react";
 
 interface RefcardData {
@@ -9,7 +9,6 @@ interface RefcardData {
     url: string;
     cover: string;
     languages: string[];
-    tags: string[];
 }
 
 export default function Home() {
@@ -35,24 +34,24 @@ export default function Home() {
               <h2 className="">Profil</h2>
               <div className="flex flex-col self-center text-3xl">
                   <p>
-                      Salut, je m'appelle Wallerand et suis un passioné d'informatique et particulièrement de la
+                      Salut, je m&apos; appelle Wallerand et suis un passioné d&apos;informatique et particulièrement de la
                       Programmation Orientée Objet.
                       voulant au départ exprimer ma créativité aussi bien dans le graphisme,
-                      la modélisation 3D ou encore la musique, j'ai tout naturellement voulu apprendre à faire des jeux
+                      la modélisation 3D ou encore la musique, j&apos;ai tout naturellement voulu apprendre à faire des jeux
                       vidéos avec le C# et Unity.
                   </p>
                   <p className="mt-10">
-                      Actuellement en deuxième année de BUT Informatique en section internationnale à l'université de
+                      Actuellement en deuxième année de BUT Informatique en section internationnale à l&apos;université de
                       Bordeaux,
-                      j'ai un stage de deux mois de prévu dans le domaine de l'aéronautique en avril et je recherche
-                      activement une alternance dans le développement d'application pour juillet 2025.
+                      j&apos;ai un stage de deux mois de prévu dans le domaine de l&apos;aéronautique en avril et je recherche
+                      activement une alternance dans le développement d&apos;application pour juillet 2025.
                   </p>
               </div>
               <img className="w-1/2 mr-40" src="/images/covers/bench.jpg" alt="Portrait"/>
           </div>
 
           <div className="flex flex-wrap gap-2.5 mt-96">
-              {RefcardData.map((data: RefcardData, index: number) => (
+              {RefcardJson.map((data: RefcardData, index: number) => (
                   <Refcard key={index}
                            title={data.title}
                            description={data.description}
