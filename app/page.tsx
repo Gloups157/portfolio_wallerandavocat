@@ -1,6 +1,7 @@
 'use client';
 import Refcard from "@/app/components/refcard";
 import RefcardJson from "@/app/data/refcards.json";
+import Navbar from "@/app/components/navbar";
 import {useState} from "react";
 
 interface RefcardData {
@@ -15,26 +16,29 @@ export default function Home() {
     const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(null);
   return (
     <main className="flex flex-col bg-repeat" style={{backgroundImage: "url('/images/paper_bg.png')"}}>
-
-        <div className="flex justify-around mt-72 -top-16">
+        <Navbar/>
+        <div className="flex justify-around mt-24 -top-16">
             <div className="border-4 w-60 h-96 ml-52">
+                <img src="/images/bench1.png" alt="Wallerand au port" className="w-full h-full object-cover"/>
             </div>
-            <div className="absolute top-5">
+            <div className="absolute top-1">
                 <img src="/images/dotted.png" alt="pointillés"/>
                 <img className="mt-32" src="/images/dotted-1.png" alt="pointillés"/>
             </div>
-            <h1 className="flex justify-center self-center text-5xl">
+            <h1 className="flexjustify-center self-center text-6xl">
                 Wallerand Avocat
             </h1>
-            <div className="border-4 w-60 h-96 mr-52">
+            <div className="flex border-4 w-60 h-96 mr-52 p-5 bg-customgrey-dark">
+                <h2 className="text-2xl font-bold text-customgrey-light">Développeur full stack.</h2>
             </div>
         </div>
 
         <div className="flex align-middle p-10 mt-[650px] bg-gray-50">
-            <div className="flex flex-col self-center text-3xl">
+            <div className="flex flex-col w-4/5 self-center text-2xl">
                 <h2 className="text-8xl mb-10">Profil</h2>
+                <div className="w-3/4 mb-10 h-[2px] bg-black"></div>
                 <h3 className="text-5xl">Les débuts</h3>
-                <p>
+                <p className="text-justify">
                     Salut, je m&apos;appelle Wallerand et suis un passionné d&apos;informatique et particulièrement de
                     la
                     Programmation Orientée Objet.
@@ -45,7 +49,7 @@ export default function Home() {
                 </p>
                 <div className="mt-10"></div>
                 <h3 className="text-5xl">Objectifs pour 2025</h3>
-                <p>
+                <p className="text-justify">
                     Actuellement en deuxième année de BUT Informatique en section internationnale à l&apos;université de
                     Bordeaux,
                     j&apos;ai un stage de deux mois de prévu dans le domaine de l&apos;aéronautique en avril et je
@@ -53,10 +57,10 @@ export default function Home() {
                     activement une alternance dans le développement d&apos;application pour juillet 2025.
                 </p>
             </div>
-            <img className="self-center w-3/4 h-3/4 aspect-square mr-40" src="/images/covers/bench.jpg" alt="Portrait"/>
+            <img className="self-center mt-32 w-3/4 h-3/4 aspect-square mr-40 p-6" src="/images/bench.jpg" alt="Portrait"/>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-5 mt-96">
+          <div className="flex flex-wrap justify-center gap-5 mt-64 mb-32">
               {RefcardJson.map((data: RefcardData, index: number) => (
                   <Refcard key={index}
                            title={data.title}
@@ -69,6 +73,7 @@ export default function Home() {
                   />
               ))}
           </div>
+        <p className="flex justify-center text-customgrey-medium">Wallerand Avocat - Portfolio ©</p>
       </main>
   );
 

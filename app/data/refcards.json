@@ -43,7 +43,7 @@
   },
   {
     "title": "Towa",
-    "description": "Réalisation d'un jeu de plateau aux règles complexes. le projet s'est déroulé sur un mois et en deux phases : la première consistait en la programmation des règles permettant de jouer au jeu. La seconde correspondait en la création d'intelligences artificelles permettant d'affronter un joueur ou une autre IA. J'ai alors opté pour l'algorithme min-max qui permettant de jouer le coup faisant perdre le moins de points à l'IA et le plus à l'adversaire.",
+    "description": "Réalisation d'un jeu de plateau aux règles complexes. le projet s'est déroulé sur un mois et en deux phases : la première consistait en la programmation des règles permettant de jouer au jeu. La seconde correspondait en la création d'intelligences artificelles permettant d'affronter un joueur ou une autre IA. J'ai alors opté pour l'algorithme min-max permettant de jouer le coup faisant perdre le moins de points à l'IA et le plus à l'adversaire.",
     "url": "https://www.google.com/",
     "cover": "towa.png",
     "languages": ["java"]
