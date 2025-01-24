@@ -34,21 +34,22 @@ export default function Home() {
         </div>
 
         <div className="flex align-middle p-10 mt-[650px] bg-gray-50">
-            <div className="flex flex-col w-4/5 self-center text-2xl">
+            <div className="flex flex-col w-4/5 self-center text-2xl text-customgrey-dark">
                 <h2 className="text-8xl mb-10">Profil</h2>
-                <div className="w-3/4 mb-10 h-[2px] bg-black"></div>
-                <h3 className="text-5xl">Les débuts</h3>
+                <div className="w-3/4 mb-10 h-[2px] bg-customgrey-dark"></div>
+                <h3 className="text-5xl font-semibold">Qui suis-je ?</h3>
                 <p className="text-justify">
-                    Salut, je m&apos;appelle Wallerand et suis un passionné d&apos;informatique et particulièrement de
+                    Bonjour, je m&apos;appelle Wallerand et suis un passionné d&apos;informatique et particulièrement de
                     la
                     Programmation Orientée Objet.
                     voulant au départ exprimer ma créativité aussi bien dans le graphisme,
                     la modélisation 3D ou encore la musique, j&apos;ai tout naturellement voulu apprendre à faire des
                     jeux
-                    vidéos en C# avec Unity.
+                    vidéos en C# avec Unity. Aujoud&apos;hui, je suis développeur full stack et j&apos;ai la chance de
+                    me lever chaque matin pour faire ce que j&apos;aime.
                 </p>
                 <div className="mt-10"></div>
-                <h3 className="text-5xl">Objectifs pour 2025</h3>
+                <h3 className="text-5xl font-semibold">Objectifs pour 2025</h3>
                 <p className="text-justify">
                     Actuellement en deuxième année de BUT Informatique en section internationnale à l&apos;université de
                     Bordeaux,
