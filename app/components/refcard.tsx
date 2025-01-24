@@ -13,9 +13,9 @@ interface RefcardProps {
 
 const Refcard: React.FC<RefcardProps> = ({title, description, url, cover, languages, isExpanded, onClick}) => {
     return (
-        <div className={`${isExpanded ? 'z-10 w-[800px] h-[600px]' : ' w-72 h-[425px]'} flex flex-col items-center border-8 border-customgrey-light bg-customgrey-dark  transition-all duration-700`}
+        <div className={`${isExpanded ? 'z-10 w-[800px] h-[600px]' : ' w-72 h-[425px]'} flex flex-col items-center border-4  bg-customgrey-dark  transition-all duration-700`}
              onClick={onClick}>
-            <Image className="h-[210px] mt-6 object-cover inset-0 z-0 border-4 border-customgrey-light"
+            <Image className="h-[210px] mt-6 object-cover inset-0 z-0"
                    src={cover}
                    alt={cover}
                    width={200}
