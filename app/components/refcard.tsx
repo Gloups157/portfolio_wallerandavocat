@@ -13,33 +13,33 @@ interface RefcardProps {
 
 const Refcard: React.FC<RefcardProps> = ({title, description, url, cover, languages, isExpanded, onClick}) => {
     return (
-        <div className={`${isExpanded ? 'w-1/2 h-lvh z-10 absolute left-1/4 right-1/4' : 'flex relative w-72 h-96'} transition-all duration-700`}
+        <div className={`${isExpanded ? 'z-10 w-[800px] h-[600px]' : ' w-72 h-[425px]'} flex flex-col items-center bg-customgrey-dark transition-all duration-700`}
              onClick={onClick}>
-            <Image className="rounded-3xl inset-0 z-0"
+            <Image className="h-[210px] mt-6 object-cover inset-0 z-0 border-4 border-customgrey-light"
                    src={cover}
                    alt={cover}
-                   layout="fill"
-                   objectFit="cover"
+                   width={200}
+                   height={200}
             />
-            <div className="flex flex-col justify-end inset-10 p-10">
-                <div className="relative flex justify-end text-right">
-                    <h3>{title}</h3>
-                    <div className="">
+            <div className="flex flex-col justify-end inset-10 p-5">
+                    <h3 className="text-customgrey-light text-2xl text-right">{title}</h3>
+                    <div className="h-12 w-auto flex justify-end flex-wrap">
                         {languages.map((language, index) => (
-                            <Image
+                            <Image className=""
                                 key={index}
                                 src={language}
                                 alt={language}
-                                width={50}
-                                height={50}
+                                   height={50}
+                                   width={50}
+                                layout="intrinsic"
+                                objectFit="contain"
                             />
                         ))}
-                    </div>
                 </div>
                 {isExpanded && (
                     <>
-                        <p>{description}</p>
-                        <a href={url}>Lien du projet</a>
+                        <p className="text-customgrey-light text-justify">{description}</p>
+                        <a className="text-blue-500 text-right" href={url}>Lien du projet</a>
                     </>
                 )}
             </div>
